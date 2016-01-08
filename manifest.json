@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "NGU Shoutbox",
+  "version": "0.1",
+  "description" : "A poppable shoutbox for NextGenUpdate.com",
+  "browser_action" : {
+  	"default_title" : "NGU Shoutbox",
+  	"default_icon"	: "ngu_popped_icon.png",
+  	"default_popup"	: "shoutbox.html"
+  },
+  "permissions" : [
+  	"tabs"
+  ]
+}
