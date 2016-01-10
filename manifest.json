@@ -1,14 +1,22 @@
 {
   "manifest_version": 2,
-  "name": "NGU Shoutbox",
-  "version": "0.1",
+  "name": "NextGenUpdate Shoutbox",
+  "version": "0.2",
   "description" : "A poppable shoutbox for NextGenUpdate.com",
   "browser_action" : {
   	"default_title" : "NGU Shoutbox",
   	"default_icon"	: "ngu_popped_icon.png",
   	"default_popup"	: "shoutbox.html"
   },
+  "background" : {
+  	"page" : "shoutbox.html"
+  },
+  "content_scripts" : [{
+  	"js": [ "js/jquery-1.11.3.min.js", "js/shoutbox.js" ],
+    "matches": [ "\u003Call_urls>" ]
+  }],
   "permissions" : [
   	"tabs"
-  ]
+  ],
+  "content_security_policy": "script-src 'self'; object-src 'self';"
 }

@@ -1,4 +1,16 @@
+body {
+	width: 800px;
+	overflow: hidden;
+}
 .shoutbox_iframe {
 	height: 500px;
 	border: none;
+	width: calc(100% - 16px);
+}
+
+.footer {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
