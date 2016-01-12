@@ -102,7 +102,7 @@ ol.commalist {
     padding-left: 0;
 }
 
-img.threadicon {
+img.threadicon, img.posticon {
     display: none;
 }
 
