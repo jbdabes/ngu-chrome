@@ -4,20 +4,21 @@
 		<title>NGU Popped SB</title>
 		<link rel="stylesheet" type="text/css" href="css/ngu.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/shoutbox.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<ul class="nav nav-tabs">
-			<li class="active">
-				<a data-toggle="tab" href="#shoutbox">Shoutbox</a>
+		<ul class="nav nav-tabs" id="tab-bar">
+			<li id="shoutbox-tab" class="active">
+				<a data-toggle="tab" href="#shoutbox"><i class="fa fa-lg fa-fw fa-comment"></i></a>
 			</li>
-			<li>
-				<a data-toggle="tab" href="#messages">Messages</a>
+			<li id="messages-tab">
+				<a data-toggle="tab" href="#messages"><i class="fa fa-lg fa-fw fa-envelope"></i></a>
 			</li>
 		</ul>
-		<div class="tab-content">
+		<div class="tab-content" id="tab-container">
 			<div id="shoutbox" class="tab-pane fade in active">
 				<iframe class="shoutbox_iframe" id="shoutbox_iframe" src="http://www.nextgenupdate.com/forums/infernoshout.php?do=detach"></iframe>
 			</div>
@@ -25,6 +26,7 @@
 				<div id="pm_input"></div>
 			</div>
 		</div>
-		<span class="footer">&copy;<a href="#" id="jb_link">JB</a> & <a href="#" id="megalelz_link">MEGALELZ</a> - open source (<a href="#" id="github_chrome_link">Chrome</a> - <a href="#" id="github_firefox_link">FireFox</a>) - v0.3.2</span>
+
+		<span class="footer">&copy;<a href="#" id="jb_link">JB</a> & <a href="#" id="megalelz_link">MEGALELZ</a> - open source (<a href="#" id="github_chrome_link">Chrome</a> - <a href="#" id="github_firefox_link">FireFox</a>) - v0.4b1</span>
 	</body>
 </html>

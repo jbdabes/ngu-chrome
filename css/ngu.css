@@ -1,11 +1,13 @@
+/* main styling */
 body {
     width: 800px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .shoutbox_iframe {
     height: 500px;
     border: none;
     width: 100%;
+    margin-top: 8px;
 }
 
 .footer {
@@ -15,6 +17,7 @@ body {
     margin-right: auto;
 }
 
+/* private message list */
 #pm_input {
     box-sizing: border-box;
 }
@@ -27,6 +30,7 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border: 1px solid darkgrey;
+    margin-top: 8px;
     margin-bottom: 0;
 }
 
@@ -121,4 +125,9 @@ div.datetime {
 ol.commalist > li > a.username {
     position: relative;
     top: -10px;
+}
+
+/* pm tabs */
+i.close_pm_tab:hover {
+    color: #a94442;
 }
