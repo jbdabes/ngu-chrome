@@ -3,11 +3,28 @@
 	<head>
 		<title>NGU Popped SB</title>
 		<link rel="stylesheet" type="text/css" href="css/ngu.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/shoutbox.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<iframe class="shoutbox_iframe" id="shoutbox_iframe" src="http://www.nextgenupdate.com/forums/infernoshout.php?do=detach"></iframe>
-		<span class="footer">&copy;<a href="#" id="jb_link">JB</a> - <a href="#" id="github_link">open sourced</a> - v0.2</span>
+		<ul class="nav nav-tabs">
+			<li class="active">
+				<a data-toggle="tab" href="#shoutbox">Shoutbox</a>
+			</li>
+			<li>
+				<a data-toggle="tab" href="#messages">Messages</a>
+			</li>
+		</ul>
+		<div class="tab-content">
+			<div id="shoutbox" class="tab-pane fade in active">
+				<iframe class="shoutbox_iframe" id="shoutbox_iframe" src="http://www.nextgenupdate.com/forums/infernoshout.php?do=detach"></iframe>
+			</div>
+			<div id="messages" class="tab-pane fade">
+				<div id="pm_input"></div>
+			</div>
+		</div>
+		<span class="footer">&copy;<a href="#" id="jb_link">JB</a> - <a href="#" id="github_link">open sourced</a> - v0.3</span>
 	</body>
 </html>

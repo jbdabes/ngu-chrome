@@ -1,16 +1,124 @@
 body {
-	width: 800px;
-	overflow: hidden;
+    width: 800px;
+    overflow: hidden;
 }
 .shoutbox_iframe {
-	height: 500px;
-	border: none;
-	width: calc(100% - 16px);
+    height: 500px;
+    border: none;
+    width: 100%;
 }
 
 .footer {
-	text-align: center;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pm_input {
+    box-sizing: border-box;
+}
+
+.blockhead {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    background-color: gainsboro;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid darkgrey;
+    margin-bottom: 0;
+}
+
+#checkall_all {
+    display: none;
+}
+
+dl.stats.foldercount {
+    display: none;
+}
+
+#pmfolderlist > div.blockbody.settings_form_border > div {
+    display: none;
+}
+
+#checkall_0_today,
+#checkall_0_sunday,
+#checkall_0_monday,
+#checkall_0_tuesday,
+#checkall_0_wednesday,
+#checkall_0_thursday,
+#checkall_0_friday,
+#checkall_0_saturday,
+#checkall_0_yesterday,
+#checkall_0_last_week,
+#checkall_0_2_weeks_ago,
+#checkall_0_3_weeks_ago,
+#checkall_0_last_month,
+#checkall_0_older {
+    display: none;
+}
+
+#pmfolderlist > div.blockbody.settings_form_border > h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px 5px 5px 20px;
+    font-size: 14px;
+    background-color: whitesmoke;
+    border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+}
+
+#pmfolderlist > div.blockbody.settings_form_border > h3:nth-child(4) {
+    border-top: none;
+}
+
+#pmfolderlist > div.blockbody.settings_form_border {
+    border-left: 1px solid darkgrey;
+    border-right: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+}
+
+#pmfolderlist > div.blockbody.settings_form_border > ol.pmlist {
+    list-style-type: none;
+    background-color: #F9F9F9;
+    margin-bottom: 0;
+}
+
+#pmfolderlist > div.blockfoot.settings_form_top_border {
+    display: none;
+}
+
+hr.none {
+    display: none;
+}
+
+div.datetime > label > input[type=checkbox] {
+    display: none;
+}
+
+ol.commalist {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+img.threadicon {
+    display: none;
+}
+
+li.blockrow.pmbit > span > a {
+    font-size: 18px;
+    position: relative;
+    top: -12px;
+}
+
+div.datetime {
+    position: relative;
+    left: 600px;
+    top: 25px;
+}
+
+ol.commalist > li > a.username {
+    position: relative;
+    top: -10px;
 }
