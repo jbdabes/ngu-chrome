@@ -142,3 +142,7 @@ i.close_pm_tab:hover {
     list-style-type: none;
     padding: 0;
 }
+
+#mobile_postbit {
+    display: none;
+}

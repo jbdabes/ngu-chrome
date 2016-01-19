@@ -78,12 +78,11 @@ $(document).ajaxComplete(function(event, xhr, settings) {
 		$('#pm_' + xhrPmid + '_tab a').click();
 		/* close pm tabs */
 		registerCloseEvent();
-		// $('#pm_' + xhrPmid + '_tab a i.close_pm_tab').click(function(){
-		// 	var thisPmid = xhrPmid;
-		// 	$('#messages-tab').click();
-		// 	$('#pm_' + thisPmid + '_body').remove();
-		// 	$('#pm_' + thisPmid + '_tab').remove();
-		// });
+
+		/* fix avatars */
+		$('.postuseravatar .img-circle').each(function(){
+			$(this).attr('src', 'http://www.nextgenupdate.com/forums/' + $(this).attr('src'));
+		});
 	}
 });
 
@@ -105,8 +104,13 @@ function openPrivateMessage(pmid, title)
 	xhrPmid = pmid;
 }
 
-function registerCloseEvent() {
+function fixAvatarUrls() {
+	var avatarUrl = '';
+	avatarUrl = $('.postuseravatar .img-circle').attr('src');
+	$('.postuseravatar .img-circle').attr('src', 'http://www.nextgenupdate.com/forums/' + avatarUrl);
+}
 
+function registerCloseEvent() {
     $(".closeTab").click(function () {
 
         //there are multiple elements which has .closeTab icon so close the tab whose close icon is clicked
