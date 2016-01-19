@@ -112,9 +112,8 @@ function registerCloseEvent() {
         //there are multiple elements which has .closeTab icon so close the tab whose close icon is clicked
         var tabContentId = $(this).parent().attr("href");
         $(this).parent().parent().remove(); //remove li of tab
-        $('#messages-tab a').tab('show'); // Select messages tab
         $(tabContentId).remove(); //remove respective tab content
-
+        $('#messages-tab a').tab('show'); // Select messages tab
     });
 }
 

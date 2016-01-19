@@ -140,4 +140,5 @@ i.close_pm_tab:hover {
 /* pm tab contents */
 #showpm ol {
     list-style-type: none;
+    padding: 0;
 }
