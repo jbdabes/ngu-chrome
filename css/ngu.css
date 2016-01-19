@@ -131,3 +131,13 @@ ol.commalist > li > a.username {
 i.close_pm_tab:hover {
     color: #a94442;
 }
+
+.nav-tabs > li .close {
+    margin: -2px 0 0 10px;
+    font-size: 18px;
+}
+
+/* pm tab contents */
+#showpm ol {
+    list-style-type: none;
+}
