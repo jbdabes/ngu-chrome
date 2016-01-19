@@ -6,7 +6,7 @@ $(function () {
 
     //when ever any tab is clicked this method will be call
     $("#myTab").on("click", "a", function (e) {
-        //e.preventDefault();
+        // e.preventDefault();
 
         $(this).tab('show');
         $currentTab = $(this);
