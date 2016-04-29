@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "NextGenUpdate Shoutbox",
-  "version": "0.4",
+  "version": "0.4.1",
   "description" : "A poppable shoutbox for NextGenUpdate.com",
   "browser_action" : {
   	"default_title" : "NGU Shoutbox",
@@ -13,7 +13,7 @@
   },
   "content_scripts" : [{
   	"js": [ "js/jquery-1.11.3.min.js", "js/ngu.js" ],
-    "matches": [ "\u003Call_urls>" ]
+    "matches": [ "http://nextgenupdate.com/*", "https://nextgenupdate.com/*", "http://www.nextgenupdate.com/*", "https://www.nextgenupdate.com/*" ]
   }],
   "permissions" : [
   	"tabs"
